@@ -91,6 +91,8 @@ dependencies {
 
     testImplementation(libs.androidx.paging.testing)
 
+    testRuntimeOnly(libs.junit.vintage.engine)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
