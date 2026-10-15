@@ -13,7 +13,6 @@ object TestData {
     fun productDto(
         id: Long = 785359,
         listPriceIncVat: Double? = null,
-        coolbluesChoiceTitle: String? = "middenklasse iPhone",
         promoIcon: PromoIcon? = PromoIcon(text = "middenklasse iPhone", type = "coolblues-choice")
     ) = Product(
         productId = id,
@@ -28,14 +27,13 @@ object TestData {
         listPriceIncVat = listPriceIncVat,
         listPriceExVat = null,
         productImage = "https://image.coolblue.nl/300x750/products/818870",
-        coolbluesChoiceInformationTitle = coolbluesChoiceTitle,
+        coolbluesChoiceInformationTitle = "",
         promoIcon = promoIcon,
         nextDayDelivery = true
     )
 
     fun productItem(
         id: Long = 785359,
-        coolbluesChoiceTitle: String? = "middenklasse iPhone"
     ) = ProductItem(
         productId = id,
         name = "Apple iPhone 6 32GB Grijs",
@@ -45,7 +43,6 @@ object TestData {
         availabilityState = 2,
         priceIncludingVat = 369.0,
         image = "https://image.coolblue.nl/300x750/products/818870",
-        informationTitle = coolbluesChoiceTitle,
         nextDayDelivery = true
     )
 

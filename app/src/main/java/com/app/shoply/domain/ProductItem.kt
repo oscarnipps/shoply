@@ -9,6 +9,5 @@ data class ProductItem(
     val availabilityState: Int,
     val priceIncludingVat: Double,
     val image: String,
-    val informationTitle: String?,
     val nextDayDelivery: Boolean
 )

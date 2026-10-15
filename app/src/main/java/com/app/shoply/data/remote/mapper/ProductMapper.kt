@@ -23,7 +23,6 @@ class ProductMapper @Inject constructor() {
         availabilityState = product.availabilityState,
         priceIncludingVat = product.salesPriceIncVat,
         image = product.productImage,
-        informationTitle = product.coolbluesChoiceInformationTitle,
         nextDayDelivery = product.nextDayDelivery
     )
 }

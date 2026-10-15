@@ -15,13 +15,6 @@ class ProductMapperTest {
     }
 
     @Test
-    fun `keeps optional fields null when absent`() {
-        val dto = TestData.productDto(coolbluesChoiceTitle = null, promoIcon = null)
-
-        assertNull(mapper.map(dto).informationTitle)
-    }
-
-    @Test
     fun `maps response to product page with paging metadata`() {
         val response = TestData.response(
             products = listOf(TestData.productDto(id = 1), TestData.productDto(id = 2)),
