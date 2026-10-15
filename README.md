@@ -116,9 +116,7 @@ Notes:
 - **The availability mapping is an assumption.** `availabilityState` is mapped as `2` → in stock, `1` → low stock, `0` → out of stock. 
 - **There's no offline cache.** There's a single remote source and no `RemoteMediator` or database, so results don't survive process death or work offline.
 - **Formatting is fixed to the Netherlands.** Prices and ratings always use the `nl-NL` locale and `€`, whatever the device language. The UI text is in English while product content (names, selling points) comes from the API in Dutch.
-- **The screen may briefly flicker on rotation.** Load states round-trip from the UI to the ViewModel. On a configuration change, a fresh `LazyPagingItems` can briefly report `Loading` before the cached data arrives, which on some Paging versions shows the skeleton for a frame or closes an open bottom sheet.
-- **Moshi uses reflection.** `KotlinJsonAdapterFactory` pulls in `kotlin-reflect` and needs R8 keep rules for the DTOs. Switching to Moshi codegen (`@JsonClass(generateAdapter = true)`) would remove both.
-- **Load-more retry is separate from full retry.** A failed next page retries only that page (`products.retry()`), while a full-screen error rebuilds the whole search (`RetryClicked`). This is intended: the first keeps what's already loaded, the second starts clean.
+
 
 # App Screen Flow 🎨
 
