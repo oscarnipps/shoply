@@ -1,3 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">shoply</string>
+    <string name="app_name">Shoply</string>
+    <string name="search_hint">Search products</string>
+    <string name="search_clear">Clear search text</string>
+    <string name="search_cancel">Cancel</string>
+    <string name="launch_title">Find something you’ll love</string>
+    <string name="launch_message">Search by product name, brand or type — for example “iphone”.</string>
+    <string name="results_for">Results for %1$s</string>
+    <string name="loading_results">Loading results</string>
+    <string name="loading_more">Loading more…</string>
+    <string name="load_more_error">Couldn’t load more results</string>
+    <string name="load_more_retry">Retry</string>
+    <string name="empty_title">No results for “%1$s”</string>
+    <string name="empty_message">Check the spelling or try a more general term.</string>
+    <string name="empty_action">Clear search</string>
+    <string name="offline_title">You’re offline</string>
+    <string name="offline_message">Check your internet connection and try again.</string>
+    <string name="error_title">Something went wrong</string>
+    <string name="error_message">We couldn’t load the results. Please try again in a moment.</string>
+    <string name="retry">Try again</string>
+    <string name="review_count">(%1$,d)</string>
+    <string name="no_reviews">No reviews yet</string>
+    <string name="rating_a11y">Rated %1$s out of 10 from %2$,d reviews</string>
+    <string name="availability_in_stock">In stock</string>
+    <string name="availability_low_stock">Only a few left</string>
+    <string name="availability_out_of_stock">Out of stock</string>
+    <string name="availability_unknown">Availability unknown</string>
+    <string name="delivery_tomorrow">Delivered tomorrow</string>
+    <string name="delivery_tomorrow_short">Tomorrow</string>
+    <string name="price_incl_vat">incl. VAT</string>
+    <string name="highlights">Highlights</string>
+    <string name="reviews">Reviews</string>
+    <string name="reviews_based_on">Based on %1$,d reviews</string>
+    <string name="close">Close</string>
 </resources>
